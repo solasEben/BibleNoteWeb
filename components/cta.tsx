@@ -9,7 +9,7 @@ export default function CTA() {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px]" />
 
                 <div className="relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to deepen your <span className="text-primary italic">faith</span>?</h2>
+                    <h2 className="text-4xl md:text-6xl font-bold mb-8 text-foreground">Ready to deepen your <span className="text-primary italic">faith</span>?</h2>
                     <p className="text-muted text-lg md:text-xl max-w-2xl mx-auto mb-12">
                         Join thousands of believers who have transformed their scriptural study with BibleNote.
                         Start your free trial today.
@@ -23,7 +23,7 @@ export default function CTA() {
                         </Link>
                         <Link
                             href="/pricing"
-                            className="w-full sm:w-auto text-white font-semibold flex items-center justify-center hover:text-primary transition-colors group"
+                            className="w-full sm:w-auto text-foreground font-semibold flex items-center justify-center hover:text-primary transition-colors group"
                         >
                             View all plans
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

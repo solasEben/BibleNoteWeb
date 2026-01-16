@@ -20,10 +20,10 @@ const personas = [
 
 export default function PersonaCard() {
     return (
-        <section className="py-24 px-4 bg-surface/20">
+        <section className="py-24 px-4 bg-warm/20">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Tailored for You</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">Tailored for You</h2>
                     <p className="text-muted max-w-xl mx-auto">
                         Whether you are a lifelong student or a spiritual shepherd, BibleNote adapts to your specific needs.
                     </p>
@@ -34,13 +34,13 @@ export default function PersonaCard() {
                         <Link
                             key={persona.role}
                             href={persona.href}
-                            className="group p-8 md:p-12 rounded-3xl bg-surface border border-white/5 hover:border-primary/30 transition-all flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-8"
+                            className="group p-8 md:p-12 rounded-3xl bg-surface border border-border hover:border-primary/30 transition-all flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-8"
                         >
                             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-background transition-colors duration-500">
                                 <persona.icon className="w-8 h-8" />
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{persona.role}</h3>
+                                <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">{persona.role}</h3>
                                 <p className="text-muted leading-relaxed mb-6">
                                     {persona.description}
                                 </p>

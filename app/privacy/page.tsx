@@ -2,7 +2,7 @@ export default function PrivacyPage() {
     return (
         <div className="pb-20 px-4">
             <section className="pt-32 pb-16 max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+                <h1 className="text-4xl font-bold mb-8 text-foreground">Privacy Policy</h1>
                 <div className="prose prose-invert max-w-none text-muted space-y-6 leading-relaxed">
                     <p>
                         Your privacy is of utmost importance to us at BibleNote. This policy outlines how

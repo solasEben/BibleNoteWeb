@@ -2,11 +2,10 @@ export const BRAND = {
     name: "BibleNote",
     tagline: "Your Personal Sanctuary for Scriptural Study",
     colors: {
-        background: "#0B0F14",
-        surface: "#111827",
-        primary: "#E5C07B",
-        accent: "#60A5FA",
-        muted: "#9CA3AF",
+        primary: "#8878FF",
+        indigo: "#3A3F58",
+        aqua: "#C7F0E9",
+        pink: "#F7DDE2",
     },
     logo: "/logo.png",
     fonts: {

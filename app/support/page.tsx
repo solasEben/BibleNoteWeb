@@ -5,10 +5,10 @@ export default function SupportPage() {
         <div className="pb-20">
             <section className="pt-32 pb-16 px-4">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">How can we help?</h1>
-                    <p className="text-muted text-lg">
-                        Our mission is to support your spiritual growth. Reach out if you have questions,
-                        need technical help, or want to share feedback.
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">How can we help?</h1>
+                    <p className="text-muted text-lg max-w-2xl mx-auto">
+                        Search our knowledge base or reach out to our dedicated support team
+                        for guidance on your BibleNote journey.
                     </p>
                 </div>
             </section>
@@ -34,11 +34,11 @@ export default function SupportPage() {
                         button: "Join Community"
                     }
                 ].map((item, idx) => (
-                    <div key={idx} className="bg-surface p-8 rounded-3xl border border-white/5 text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                    <div key={idx} className="bg-surface p-8 rounded-3xl border border-border hover:border-primary/50 transition-colors">
+                        <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
                             <item.icon className="w-6 h-6 text-primary" />
                         </div>
-                        <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+                        <h3 className="text-xl font-bold mb-3 text-foreground">{item.title}</h3>
                         <p className="text-muted text-sm mb-8 leading-relaxed">{item.desc}</p>
                         <button className="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-background transition-colors">
                             {item.button}

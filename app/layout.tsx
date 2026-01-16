@@ -28,7 +28,7 @@ export default function RootLayout({
                                 alt={BRAND.name}
                                 width={32}
                                 height={32}
-                                className="rounded-lg group-hover:rotate-12 transition-transform duration-300"
+                                className="rounded-lg group-hover:rotate-12 transition-transform duration-300 dark:brightness-150"
                             />
                             <span className="text-2xl font-bold text-primary tracking-tight">
                                 {BRAND.name}
@@ -67,7 +67,7 @@ export default function RootLayout({
                                     alt={BRAND.name}
                                     width={24}
                                     height={24}
-                                    className="rounded-md opacity-80 group-hover:opacity-100 transition-opacity"
+                                    className="rounded-md opacity-80 group-hover:opacity-100 transition-opacity dark:brightness-150"
                                 />
                                 <span className="text-xl font-bold text-primary">
                                     {BRAND.name}
@@ -78,7 +78,7 @@ export default function RootLayout({
                             </p>
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Product</h3>
+                            <h3 className="text-foreground font-semibold mb-4">Product</h3>
                             <ul className="space-y-2">
                                 {FOOTER_LINKS.product.map((link) => (
                                     <li key={link.name}>
@@ -90,7 +90,7 @@ export default function RootLayout({
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Company</h3>
+                            <h3 className="text-foreground font-semibold mb-4">Company</h3>
                             <ul className="space-y-2">
                                 {FOOTER_LINKS.company.map((link) => (
                                     <li key={link.name}>
@@ -102,7 +102,7 @@ export default function RootLayout({
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold mb-4">Support</h3>
+                            <h3 className="text-foreground font-semibold mb-4">Support</h3>
                             <ul className="space-y-2">
                                 {FOOTER_LINKS.support.map((link) => (
                                     <li key={link.name}>

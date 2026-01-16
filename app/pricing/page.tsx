@@ -6,7 +6,7 @@ export default function PricingPage() {
         <div className="pb-20">
             <section className="pt-32 pb-16 px-4">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Simple, Transparent Pricing</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Simple, Transparent Pricing</h1>
                     <p className="text-muted text-lg max-w-2xl mx-auto">
                         Invest in your spiritual growth with plans designed for individuals, families, and leaders.
                     </p>
@@ -15,9 +15,9 @@ export default function PricingPage() {
 
             <PricingTable />
 
-            <section className="py-24 px-4 border-t border-white/5">
+            <section className="py-24 px-4 border-t border-border">
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center text-foreground">Frequently Asked Questions</h2>
                     <div className="space-y-8">
                         {[
                             {
@@ -33,8 +33,8 @@ export default function PricingPage() {
                                 a: "Always. You can export your notes, highlights, and journals in various formats (PDF, Markdown, JSON) at any time."
                             }
                         ].map((faq, idx) => (
-                            <div key={idx} className="bg-surface/50 p-6 rounded-2xl border border-white/5">
-                                <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
+                            <div key={idx} className="bg-surface border border-border p-6 rounded-2xl shadow-sm">
+                                <h3 className="text-foreground font-semibold mb-2">{faq.q}</h3>
                                 <p className="text-muted text-sm leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

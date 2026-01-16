@@ -57,9 +57,9 @@ export default function PricingTable() {
                     {tiers.map((tier) => (
                         <div
                             key={tier.name}
-                            className={`p-8 rounded-3xl border flex flex-col ${tier.focused
-                                    ? "bg-surface border-primary ring-1 ring-primary relative scale-105"
-                                    : "bg-surface/50 border-white/5"
+                            className={`p-8 rounded-3xl border flex flex-col transition-all duration-300 ${tier.focused
+                                ? "bg-surface border-primary ring-1 ring-primary relative scale-105 z-10 shadow-xl shadow-primary/5"
+                                : "bg-surface/50 border-border"
                                 }`}
                         >
                             {tier.focused && (
@@ -86,8 +86,8 @@ export default function PricingTable() {
                             <Link
                                 href="/sign-up"
                                 className={`w-full py-3 rounded-xl text-center font-bold transition-all ${tier.focused
-                                        ? "bg-primary text-background hover:bg-primary/90 shadow-lg shadow-primary/10"
-                                        : "bg-white/5 text-white hover:bg-white/10"
+                                    ? "bg-primary text-background hover:bg-primary/90 shadow-lg shadow-primary/20"
+                                    : "bg-warm text-foreground border border-border hover:bg-warm/80"
                                     }`}
                             >
                                 {tier.cta}
