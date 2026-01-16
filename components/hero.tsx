@@ -25,7 +25,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+                    className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-foreground"
                 >
                     Your Personal <span className="text-gradient">Sanctuary</span> <br />
                     for Scriptural Wisdom
@@ -56,7 +56,7 @@ export default function Hero() {
                     </Link>
                     <Link
                         href="/features"
-                        className="w-full sm:w-auto bg-surface border border-white/10 px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-colors"
+                        className="w-full sm:w-auto bg-warm border border-border px-8 py-4 rounded-xl font-bold hover:bg-warm/80 transition-colors text-foreground"
                     >
                         Explore Features
                     </Link>

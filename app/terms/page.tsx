@@ -2,7 +2,7 @@ export default function TermsPage() {
     return (
         <div className="pb-20 px-4">
             <section className="pt-32 pb-16 max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
+                <h1 className="text-4xl font-bold mb-8 text-foreground">Terms of Service</h1>
                 <div className="prose prose-invert max-w-none text-muted space-y-6 leading-relaxed">
                     <p>
                         Welcome to BibleNote. By using our website and services, you agree to comply with
